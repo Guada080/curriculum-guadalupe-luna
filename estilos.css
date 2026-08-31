@@ -17,8 +17,8 @@
 
 * {
     font-family: "Lato regular";
-
     text-wrap-style: balance;
+    line-height: 24px;
     font-size: 20px;
     margin: 0;
     padding: 20;
@@ -27,22 +27,21 @@
 h1 {
     font-family: "hagrid", sans-serif;
     color: blueviolet;
-    font-size: 2.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     margin: 35px;
 }
 
 h2 {
     font-family: "Lato bold italic";
     font-size: 1.5rem;
-    color: blueviolet;
+    color: rgb(27, 1, 34);
     height: 30px;
     padding-left: 35px;
 
 }
 
 h3 {
-    line-height: 90px;
     padding-left: 35px;
     font-family: "hagrid";
     font-size: 1rem;
@@ -67,16 +66,38 @@ nav {
     gap: 15px;
 }
 
+a{
+    color: rgb(27, 1, 34);
+}
+
 p {
     padding-left: 35px;
 }
 
 h4 {
     height: 50px;
-    background-color: #bac;
+    background-color:  #be91e7;
     display: flex;
     align-items: flex-end;
-    margin-top: 40px;
     color: white;
     justify-content: space-around;
+}
+
+
+#Contacto{
+    background-color:  #bac;
+    padding-bottom: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    font-family: "Lato bold italic";
+    font-size: 20px;
+    color: #993dee;
+    line-height: 25px;
 }
