@@ -1,157 +1,124 @@
-/* CSS Document*/
+/*CSS Document*/
 @charset"UTF-8";
 
 @font-face {
-    font-family: "Lato regular";
-    src: url(fuentes/Lato-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+    font-family: "cursiva";
+    src: url(fuentes/LuxuriousScript-Regular.ttf);
+    font-weight: regular;
+    font-style: regular;
 }
 
 @font-face {
-    font-family: "Lato bold italic";
-    src: url(fuentes/Lato-BoldItalic.ttf);
+    font-family: "Aktiv regular";
+    src: url(fuentes/Aktiv_Grotesk_Regular.otf);
+    font-weight: regular;
+    font-style: regular;
+}
+
+
+@font-face {
+    font-family: "Aktiv light italic";
+    src: url(fuentes/Aktiv_Grotesk_Light_Italic.otf);
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Aktiv light";
+    src: url(fuentes/Aktiv_Grotesk_Light.otf);
+    font-weight: light;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: "Aktiv semibold";
+    src: url(fuentes/Aktiv_Grotesk_SemiBold.otf);
+    font-weight: semibold;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: "Aktiv bold";
+    src: url(fuentes/Aktiv_Grotesk_Bold.otf);
+    font-weight: bold;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: "Aktiv bold italic";
+    src: url(fuentes/Aktiv_Grotesk_Bold_Italic.otf);
     font-weight: bold;
     font-style: italic;
 }
 
 * {
-    font-family: "Lato regular";
-    text-wrap-style: balance;
-    font-size: 20px;
-    margin: 0;
-    padding: 20;
+    font-family: "Aktiv light";
+    font-size: 19px;
 }
 
 h1 {
-    font-family: "hagrid", sans-serif;
-    color: blueviolet;
-    font-size: 2.5rem;
-    line-height: 2.8rem;
-    margin: 35px;
+    font-family: "Aktiv bold";
+    font-size: 108px;
+    color: #262628;
+}
+
+#titulo {
+    font-family: "cursiva";
+    font-size: 360px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
 }
 
 h2 {
-    font-family: "Lato bold italic";
-    font-size: 1.5rem;
-    color: rgb(27, 1, 34);
-    height: 30px;
-    padding-left: 35px;
-
+    font-family: "cursiva";
+    font-size: 267px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h3 {
-    padding-left: 35px;
-    font-family: "hagrid";
-    font-size: 1.3 rem;
-    background-color: lightgray;
-    height: 70px;
-    margin-block: 30px;
-    display: flex;
-    align-items: center;
+    font-family: "cursiva";
+    font-size: 186px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #be91e7;
-    flex-wrap: wrap;
-    padding: 15px;
-}
-
-nav {
-    display: flex;
-    gap: 15px;
-}
-
-a {
-    color: rgb(27, 1, 34);
-}
-
-
 
 h4 {
-    height: 50px;
-    font-size: 15px;
-    background-color: #be91e7;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center;
+    font-family: "Aktiv semibold";
+    color: #000;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-
+h6 {
+    font-family: "Aktiv light italic";
+    color: #685EBC;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
 }
 
-
-#contacto {
-    margin: 0;
-    margin-top: 80px;
-    font-size: 1.3rem;
-    color: white;
-    background-color: #be91e7;
-    display: flex;
-    justify-content: center;
+h7 {
+    font-family: "Aktiv regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
 }
 
-
-#redes {
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#hero {
+    background: linear-gradient(180deg, #A9A1F5 0%, #C6C1F2 72.12%, #FFF 100%);
 }
 
-p {
-    margin: 12px;
-    margin-top: 0;
-    padding-right: 10px;
-}
+.welcome {
+    position: relative;
+    z-index: 2;
 
-#descripcion {
-    width: 292px;
-    margin: 20px;
-
-}
-
-#perfil {
-    height: 25px;
-    background-color: #caabe7;
-    padding-left: 20px;
-}
-
-.columna {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-}
-
-.items {
-
-    height: 70px;
-    column-gap: 42px;
-    margin-left: 20px;
-    margin-top: 56px;
-    line-height: 40px;
-}
-::marker{
-    color: blueviolet;
-}
-.lista {
-    display: flex;
-    margin-bottom: 60px;
-    align-items: flex-start;
-    column-gap: 40px;
-}
-
-.separador {
-    padding-left: 42px;
-    text-decoration-line: underline;
-    height: 40px;
-    color: blueviolet;
 }
