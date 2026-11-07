@@ -53,24 +53,35 @@
 
 * {
     font-family: "Aktiv light";
-    font-size: 19px;
+    font-size: 14px;
     margin: 0%;
 }
 
 nav {
-    background-color: #AEA6F4;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    display: flex;
-    height: 97px;
-    padding: 15px;
+    gap: 15px;
 }
+
+header {
+    background-color: #AEA6F4;
+    height: 40px;
+    padding: 20px;
+    align-content: center;
+}
+
+#hero {
+    background: linear-gradient(180deg, #AEA6F4 0%, #C6C1F2 72.12%, #FFF 100%);
+    width: 100%;
+}
+
 
 h1 {
     font-family: "cursiva";
-    font-size: 360px;
+    font-size: 300px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -86,7 +97,7 @@ h1 {
 
 h2 {
     font-family: "cursiva";
-    font-size: 267px;
+    font-size: 212px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,17 +105,17 @@ h2 {
 
 h3 {
     font-family: "cursiva";
-    font-size: 186px;
+    font-size: 150px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    height: 206px;
+    height: 166px;
 }
 
 h4 {
     font-family: "Aktiv semibold";
     color: #000;
-    font-size: 70px;
+    font-size: 54px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -122,7 +133,7 @@ h4 {
 h6 {
     font-family: "Aktiv light italic";
     color: #685EBC;
-    font-size: 40px;
+    font-size: 28px;
     font-style: italic;
     font-weight: 300;
     line-height: normal;
@@ -130,7 +141,7 @@ h6 {
 
 #sub-black {
     font-family: "Aktiv light";
-    font-size: 40px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 300;
     color: #262628;
@@ -138,70 +149,65 @@ h6 {
 
 h7 {
     font-family: "Aktiv regular";
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal
 }
 
-#hero {
-    background: linear-gradient(180deg, #AEA6F4 0%, #C6C1F2 72.12%, #FFF 100%);
-    width: 100%;
-    padding: 15px;
-}
 
 
 .sobremi {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 480px;
 }
 
 .inspiracion {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 480px;
     margin-top: 60px;
 }
 
 .intro {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .separador-uno {
     display: flex;
     flex-direction: row;
-    column-gap: 360px;
+    column-gap: 300px;
+    width: 1120px;
 }
 
 .separador-dos {
     display: flex;
     flex-direction: row;
     column-gap: 304px;
+    max-width: 1120px;
 }
 
 .estudios {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     row-gap: 80px;
     justify-content: center;
-    margin-left: 240px;
-    margin-right: 240px;
     margin-top: 100px;
+    align-items: center;
 }
 
 .proyectos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 150px;
 }
 
 #bloque-texto {
-    width: 800px;
+    width: 508px;
     display: flex;
     align-items: center;
 }
@@ -211,7 +217,7 @@ h7 {
 }
 
 footer {
-    height: 250px;
+    height: 186px;
     background-color: #AEA6F4;
     display: flex;
     justify-content: space-between;
@@ -224,7 +230,89 @@ footer {
     text-align: right;
 }
 
-a{
-    color:#430b54;
+a {
+    color: #430b54;
     text-decoration: none;
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 440px;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+#listado {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    list-style-type: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+
+
+
+
+/*aca vienen los estilos del formulario*/
+
+form {
+    background-color: #D9D9D9;
+    border-radius: 55px;
+    height: auto;
+    padding: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+
+}
+
+input[type=checkbox] {
+    width: auto;
+    height: auto;
+}
+
+input[type=submit] {
+    height: 52px;
+    width: 104px;
+    border-radius: 15px;
+    background-color: #5E54B7;
+    color: #C6C1F2;
+    margin: 10px;
+}
+
+label{
+    font-family: "Aktiv semibold";
+}
+
+
+
+/* aca es el estilo de la galeria de fotos*/
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

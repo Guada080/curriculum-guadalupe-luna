@@ -11,15 +11,16 @@
 <body>
     <header>
         <nav>
-            <p> PORTFOLIO</p>
             <a href="index.html">HOME</a>
+            <a href="editorial.html">EDITORIAL</a>
+            <a href="packaging.html">PACKAGING</a>
         </nav>
     </header>
     <main>
         <section id="hero">
             <h1>Portfolio</h1>
             <p id="bajada">DISEÑO Y COMUNICACION VISUAL</p>
-            
+
         </section>
 
         <section class="intro">
@@ -40,7 +41,7 @@
                         especialmente estas industrias porque combinan experiencias físicas y digitales.</p>
                 </div>
             </article>
-            <img src="img/perfil.png" alt="foto de perfil" width="416" height="420" />
+            <img src="img/perfil.png" alt="foto de perfil" width="350" height="350" />
         </section>
         <section class="estudios">
             <div class="separador-uno">
@@ -115,45 +116,68 @@
         </section>
         <section class="proyectos">
             <h2>Proyectos</h2>
-            <p id="bloque-texto">Un recorrido por algunos de mis proyectos, donde las ideas toman forma a través de la tipografía, el
+            <p id="bloque-texto">Un recorrido por algunos de mis proyectos, donde las ideas toman forma a través de la
+                tipografía, el
                 color y la composición. Cada trabajo parte de un concepto diferente y busca encontrar su propia manera
                 de comunicar visualmente.</p>
         </section>
         <section class="portadas">
             <a href="packaging.html"><img src="img/portada-latas.jpg" alt="imagen de latas" width="100%"
                     height="270" /></a>
-            <a href="editorial.html"><img src="img/portada-editorial.jpg" alt="imagen de latas" width="100%" height="270" /></a>
-            <img src="img/portfolio-.gif" width="100%"/>
+            <a href="editorial.html"><img src="img/portada-editorial.jpg" alt="imagen de latas" width="100%"
+                    height="270" /></a>
+            <img src="img/portfolio-.gif" width="100%" />
         </section>
         <section class="contacto">
-            <ul>
-                <li>
+            <article class="redes">
+                <div>
                     <h4>Contactate conmigo</h4>
-                   <p> BuenosAires-Argentina</p>
-                </li>
-                <article class="redes">
-                    <ul>
-                        <li>
-                            <img src="img/mail.png" alt="logomail" width="58" height="58" />
-                           <p> lupe.luna0408@gmail.com</p>
+                    <p> BuenosAires-Argentina</p>
+                </div>
+                <div>
+                    <ul id="listado">
+                        <li class="links">
+                            <img src="img/mail.png" alt="logomail" width="40" height="40" />
+                            <p> lupe.luna0408@gmail.com</p>
                         </li>
-                        <li>
-                            <img src="img/instagram.png" alt="logo instagram" width="58" height="58" />
+                        <li class="links">
+                            <img src="img/instagram.png" alt="logo instagram" width="40" height="40" />
                             <a href="https://www.instagram.com/hey.wuadi/">@HEY WUADI</a>
                         </li>
-                        <li>
-                            <img src="img/behance.png" alt="logo behance" width="58" height="58" />
+                        <li class="links">
+                            <img src="img/behance.png" alt="logo behance" width="40" height="40" />
                             <a href="https://www.behance.net/guadalupeluna7">Behance</a>
                         </li>
                     </ul>
-                </article>
-                <div class="formulario">
-                    <!-- aca viene el formulario-->
                 </div>
+            </article>
+
+            <div class="formulario">
+                <!-- aca viene el formulario-->
+                <form method="post" action="" target="_blank" enctype="text/plain">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre" maxlength="30" placeholder="Ej: Guadalupe Luna">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" placeholder="Ej: lunaguadalupe@gmail.com">
+
+                    <p>Servicio</p>
+                    <label for="packaging">Packaging <input type="checkbox" name="servicio" value="Packaging" id="packaging"></label>
+
+
+                    <label for="editorial">Editorial <input type="checkbox" name="servicio" value="Editorial" id="editorial"></label>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+
+                    <input type="submit" value="Enviar" formenctype="text/plain">
+
+            </div>
         </section>
     </main>
     <footer>
-     <img src="img/logo.svg" />
+        <img src="img/logo.svg" width="160" height="160" />
         <ul class="lista">
             <li> Todos los derechos reservados</li>
             <li> Cátedra Wischñevsky UNLa</li>
