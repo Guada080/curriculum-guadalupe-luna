@@ -6,6 +6,17 @@
     <title>Guada Luna Portoflio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
 
 <body>
@@ -14,13 +25,14 @@
             <a href="index.html">HOME</a>
             <a href="editorial.html">EDITORIAL</a>
             <a href="packaging.html">PACKAGING</a>
+            <a href="index.html#contacto">CONTACTO</a>
         </nav>
     </header>
 
     <main>
         <section class="info-latas">
             <article>
-                <!--aca falta la flecha para atras-->
+
                 <h4 class="titulo-color">Marca de Bebidas</h4>
                 <p>Diseño de una colección de latas de bebida isotónica inspirada en el universo de Maze Runner,
                     dirigida a runners y personas que realizan actividad física. La propuesta combina referencias
@@ -28,16 +40,67 @@
                     hidratación, la recuperación y la superación personal.</p>
             </article>
         </section>
-        <section class="galeria">
-            <!--aca van las fotos-->
-            <div> <img src="img/latas-1.jpg" alt" imagen de tres latas" width="370" height="280" />
-                <img src="img/latas-2.jpg" alt="" width="400" height="280" />
-            </div>
-            <div>
-                <img src="img/latas-3.jpg" alt="" width="370" height="280" />
-                <img src="img/latas-4.png" alt="" width="400" height="280" />
+
+
+        <section id="miniaturas">
+            <div class="thumbnail">
+                <a href="img/latas-1.jpg"><img src="img/latas-1.jpg" alt="imagen de tres latas" width="250" height="180"
+                        onClick="mostrarGaleria()"></a>
+
+                <a href="img/latas-2.jpg"><img src="img/latas-2.jpg" alt="primer plano de lata en escena" width="280"
+                        height="180" onClick="mostrarGaleria()"></a>
             </div>
 
+            <div class="thumbnail">
+                <a href="img/latas-3.jpg"><img src="img/latas-3.jpg" alt="mockup del reverso de las tres latas"
+                        width="250" height="180" onClick="mostrarGaleria()"></a>
+                <a href="img/latas-4.png"><img src="img/latas-4.png" alt="imagen de tres latas en escena" width="280"
+                        height="180" onClick="mostrarGaleria()" /></a>
+            </div>
+
+        </section>
+
+        <section id="galeria">
+            <ul id="galeria-oculta">
+                <li class="fraccion-galeria" id="foto-1">
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"onClick="ocultarGaleria()">
+                    <a href="#foto-2">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-2">
+                    <a href="#foto-1">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"onClick="ocultarGaleria()">
+                    <a href="#foto-3">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-3">
+                    <a href="#foto-2">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50" onClick="ocultarGaleria()">
+                    <a href="#foto-4">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-4">
+                    <a href="#foto-3">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"onClick="ocultarGaleria()">
+                    <a href="#">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+            </ul>
+
+            <div id="fondo-galeria"></div>
         </section>
     </main>
     <footer>
@@ -48,4 +111,4 @@
             <li> 2026</li>
         </ul>
     </footer>
-    </body>
+</body>
