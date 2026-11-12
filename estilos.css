@@ -480,30 +480,32 @@ label {
     body {
         font-size: 14px;
     }
-h1{
-    font-size: 200px;
-}    
-h2{
-    font-size: 164px;
-}
 
-h3{
-    font-size: 120px;
-    height: 140px;
-}
+    h1 {
+        font-size: 200px;
+    }
 
-nav{
-    justify-content: center;
-}
+    h2 {
+        font-size: 164px;
+    }
 
-#hero{
-    flex-direction: column-reverse;
-    height: 420px;
-}
+    h3 {
+        font-size: 120px;
+        height: 140px;
+    }
 
-.bio{
-    height: 560px;
-}
+    nav {
+        justify-content: center;
+    }
+
+    #hero {
+        flex-direction: column-reverse;
+        height: 420px;
+    }
+
+    .bio {
+        height: 560px;
+    }
 
     .intro {
         display: flex;
@@ -543,7 +545,7 @@ nav{
         align-items: center;
         height: 450px;
     }
-           
+
 
     #bloque-texto {
         width: 400px;
