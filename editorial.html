@@ -11,14 +11,14 @@
     <header>
         <nav>
             <a href="index.html">HOME</a>
-            <a href="editorial.html">EDITORIAL</a>
             <a href="packaging.html">PACKAGING</a>
+            <a href="editorial.html">EDITORIAL</a>
             <a href="index.html#contacto">CONTACTO</a>
         </nav>
     </header>
     <main>
         
-        <section class="info-editorial">
+        <section class="info-trabajos">
             <article>
                 <h4 class="titulo-color">Lookbook Indumentaria</h4>
                 <p>Diseño de un lookbook editorial para CRIATURA, una marca de indumentaria alternativa creada desde
@@ -27,20 +27,20 @@
                     moderna y auténtica.</p>
             </article>
         </section>
-        <section class="galeria">
-            <!--aca van las fotos del lookbook-->
-            <div>
-                <img src="img/lookbook-1.jpg" alt="imagen lookbook" width="400" height="280" />
-                <img src="img/lookbook-2.jpg" alt=" imagen lookbook abierto" width="400" height="280" />
+        <section id="miniaturas">
+            <div class="thumbnail">
+                <img src="img/lookbook-1.jpg" class="cambio-scale"alt="imagen lookbook" width="280" height="180" />
+                <img src="img/lookbook-2.jpg"  class="cambio-scale"alt=" imagen lookbook abierto" width="280" height="180" />
             </div>
-            <div>
-                <img src="img/lookbook-3.jpg" alt="imagen lookbook abierto" width="400" height="280" />
-                <img src="img/lookbook-4.jpg" alt="imagen lookbook abierto" width="400" height="280" />
+            <div class="thumbnail">
+                <img src="img/lookbook-3.jpg" class="cambio-scale" alt="imagen lookbook abierto" width="280" height="180" />
+                <img src="img/lookbook-4.jpg" class="cambio-scale" alt="imagen lookbook abierto" width="280" height="180" />
             </div>
-
         </section>
+
+        
         <section class="CRIATURA">
-            <article>
+            <article class="info-trabajos">
                 <h4 class="titulo-color">CRIATURA</h4>
                 <p>La marca nace como una marca de ropa alternativa que busca salir de lo convencional, con una
                     identidad visual marcada y una estética que mezcla lo urbano, lo oscuro y lo experimental. Cada
@@ -50,6 +50,9 @@
             <div>
                 <!--aca viene el video-->
                 <video src="video/Luna_Guadalupe_D3UNLa_Reel.mp4" controls height="500px">
+                    <source src="video/Luna_Guadalupe_D3UNLa_Reel.ogv" type="video/ogv">
+                    <source src="video/Luna_Guadalupe_D3UNLa_Reel.webm" type="video/webm">
+                    </video>
             </div>
         </section>
     </main>

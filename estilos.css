@@ -73,12 +73,18 @@ header {
     align-content: center;
     position: sticky;
     top: 0px;
+    z-index: 100;
 
 }
 
 #hero {
     background: linear-gradient(180deg, #AEA6F4 0%, #C6C1F2 72.12%, #FFF 100%);
     width: 100%;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -96,6 +102,7 @@ h1 {
 #bajada {
     display: flex;
     justify-content: center;
+    font-family: "Aktiv semibold";
 }
 
 h2 {
@@ -133,7 +140,7 @@ h4 {
     line-height: normal;
 }
 
-h6 {
+h5 {
     font-family: "Aktiv light italic";
     color: #685EBC;
     font-size: 28px;
@@ -150,7 +157,7 @@ h6 {
     color: #262628;
 }
 
-h7 {
+h6 {
     font-family: "Aktiv regular";
     font-size: 15px;
     font-style: normal;
@@ -217,9 +224,6 @@ h7 {
     align-items: center;
 }
 
-.portadas {
-    width: 100%;
-}
 
 footer {
     height: 150px;
@@ -266,17 +270,51 @@ a {
 .links {
     display: flex;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 12px;
 }
 
 .fondo-tps {
     display: block;
 }
 
+.fondo-tps:hover {
+    filter: grayscale(20);
+    transition-duration: 300ms;
+}
+
+#medios {
+    font-family: "Aktiv semibold";
+    color: #262628;
+}
+
+.contenedor-foto {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
+.mi-foto {
+    width: 100%;
+    display: block;
+}
+
+.estrella {
+    position: absolute;
+    width: 65%;
+    bottom: -32%;
+    right: -18%;
+    z-index: 2;
+}
+
+
+
+
+
+
 /*aca vienen los estilos del formulario*/
 
 form {
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9;*/
     border-radius: 55px;
     height: auto;
     padding: 30px;
@@ -291,49 +329,81 @@ input {
     margin-bottom: 20px;
     padding: 5px;
     border: none;
+    border-bottom: 2px solid #262628;
+    background: transparent;
+    outline: none;
 
 }
 
 input[type=checkbox] {
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 input[type=submit] {
-    height: 52px;
-    width: 104px;
+    height: 38px;
+    width: 80px;
     border-radius: 15px;
+    border: none;
     background-color: #5E54B7;
-    color: #C6C1F2;
-    margin: 10px;
+    color: #ffffff;
+    margin-top: 24px;
+    font-family: "Aktiv semibold";
+}
+
+input[type=submit]:hover {
+    background-color: #AEA6F4;
+    color: #000000;
 }
 
 label {
     font-family: "Aktiv semibold";
+    display: flex;
+    column-gap: 10px;
+    margin: 2px;
 }
 
+#choice {
+    column-gap: 60px;
+    display: flex;
+}
+
+#opcion {
+    font-family: "Aktiv light";
+}
 
 
 /* aca es el estilo de la galeria de fotos*/
 
-.info-latas {
+.info-trabajos {
     width: 700px;
     height: 180px;
     margin-left: 70px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #miniaturas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 20px;
+    height: 488px;
+    justify-content: center;
 }
 
-.thumbnail{
-    column-gap: 15px;
+.thumbnail {
+    column-gap: 20px;
     display: flex;
+}
+
+.cambio-scale:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
 }
 
 #galeria {
@@ -400,4 +470,128 @@ label {
     width: 100%;
     height: 100vh;
     z-index: 0;
+}
+
+
+
+/* responsive mobile*/
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 14px;
+    }
+h1{
+    font-size: 200px;
+}    
+h2{
+    font-size: 164px;
+}
+
+h3{
+    font-size: 120px;
+    height: 140px;
+}
+
+nav{
+    justify-content: center;
+}
+
+#hero{
+    flex-direction: column-reverse;
+    height: 420px;
+}
+
+.bio{
+    height: 560px;
+}
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 828px;
+    }
+
+    .separador-uno {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        row-gap: 50px;
+    }
+
+    .separador-dos {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        row-gap: 50px;
+    }
+
+    .estudios {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 18px;
+        align-items: center;
+        height: 450px;
+    }
+           
+
+    #bloque-texto {
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    footer {
+        height: 255px;
+        background-color: #AEA6F4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 5px;
+        width: 600px;
+
+    }
+
+    .lista {
+        text-align: center;
+    }
+
+
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+        justify-content: center;
+        max-width: 400px;
+        height: 505px;
+    }
+
+
+    .contenedor-foto {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+    }
+
 }
