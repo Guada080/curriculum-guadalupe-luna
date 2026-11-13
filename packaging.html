@@ -6,6 +6,7 @@
     <title>Guada Luna Portoflio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         function cambiarDisplay(visibilidadNueva) {
             document.getElementById("galeria").style.display = visibilidadNueva
@@ -44,18 +45,19 @@
 
         <section id="miniaturas">
             <div class="thumbnail">
-                <a href="img/latas-1.jpg"><img src="img/latas-1.jpg" class="cambio-scale" alt="imagen de tres latas"
-                        width="250" height="180" onClick="mostrarGaleria()"></a>
+                <a href="#foto-1"><img src="img/latas-miniatura-1.png" class="cambio-scale" alt="imagen de tres latas" width="250"
+                        height="180" onClick="mostrarGaleria()"></a>
 
-                <a href="img/latas-2.jpg"><img src="img/latas-2.jpg" class="cambio-scale" alt="primer plano de lata en escena" width="280" height="180" onClick="mostrarGaleria()"></a>
+                <a href="#foto-2"><img src="img/latas-miniatura-2.png" class="cambio-scale" alt="primer plano de lata en escena"
+                        width="280" height="180" onClick="mostrarGaleria()"></a>
             </div>
 
             <div class="thumbnail">
-                <a href="img/latas-3.jpg"><img src="img/latas-3.jpg" class="cambio-scale"
+                <a href="#foto-3"><img src="img/latas-miniatura-3.png" class="cambio-scale"
                         alt="mockup del reverso de las tres latas" width="250" height="180"
                         onClick="mostrarGaleria()"></a>
-                <a href="img/latas-4.png"><img src="img/latas-4.png" class="cambio-scale"
-                        alt="imagen de tres latas en escena" width="280" height="180" onClick="mostrarGaleria()" /></a>
+                <a href="#foto-4"><img src="img/latas-miniatura-4.png" class="cambio-scale" alt="imagen de tres latas en escena"
+                        width="280" height="180" onClick="mostrarGaleria()" /></a>
             </div>
 
         </section>
@@ -63,6 +65,8 @@
         <section id="galeria">
             <ul id="galeria-oculta">
                 <li class="fraccion-galeria" id="foto-1">
+                    <a href="#" class="primer-ultima-flecha"> <img src="img/atras.png" width="50" height="50"
+                            alt="atras"></a>
                     <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
                         onClick="ocultarGaleria()">
                     <a href="#foto-2">
@@ -96,9 +100,8 @@
                     <a href="#foto-3">
                         <img src="img/atras.png" width="50" height="50" alt="atras">
                     </a>
-                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
-                        onClick="ocultarGaleria()">
-                    <a href="#">
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50" onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha">
                         <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
                     </a>
                 </li>
@@ -116,3 +119,4 @@
         </ul>
     </footer>
 </body>
+</html>

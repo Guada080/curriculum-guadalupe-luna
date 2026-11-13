@@ -215,13 +215,15 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 150px;
+    height: 400px;
+    align-items: flex-end;
 }
 
 #bloque-texto {
     width: 508px;
     display: flex;
     align-items: center;
+    height: 260px;
 }
 
 
@@ -308,9 +310,6 @@ a {
 
 
 
-
-
-
 /*aca vienen los estilos del formulario*/
 
 form {
@@ -386,6 +385,17 @@ label {
     justify-content: center;
 }
 
+#info-lookbook{
+    width: 700px;
+    height: 500px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+
 #miniaturas {
     display: flex;
     flex-direction: column;
@@ -406,23 +416,42 @@ label {
     transition-timing-function: ease-out;
 }
 
+.criatura{
+    display: flex;
+    justify-content: space-between;
+    height: 672px;
+    align-items: center;
+}
+
+#multimedia{
+        width: 530px;
+}
+
+
+
+/*..........................*/
+
 #galeria {
     display: none;
     width: 100%;
     justify-content: center;
     height: 100vh;
-    background-color: #000000;
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 300;
 }
 
 #galeria-oculta {
     display: flex;
     width: 100%;
-    max-width: 1450px;
+    max-width: none;
     overflow: hidden;
     z-index: 20;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
 .fraccion-galeria {
@@ -432,16 +461,19 @@ label {
     background-position: center;
     background-size: contain;
     width: 100%;
-    min-width: 1450px;
+    min-width: 100%;
     height: 100vh;
     justify-content: space-between;
 
 }
 
+.primer-ultima-flecha {
+	visibility: hidden;
+}
 
 .cerrar {
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 62px;
     right: 2%;
 }
 
@@ -461,6 +493,25 @@ label {
 #foto-4 {
     background-image: url("img/latas-4.png");
 }
+
+#foto-5 {
+    background-image: url("img/lookbook-1.jpg");
+}
+
+#foto-6 {
+    background-image: url("img/lookbook-2.jpg");
+}
+
+#foto-7 {
+    background-image: url("img/lookbook-3.jpg");
+}
+
+#foto-8 {
+    background-image: url("img/lookbook-4.jpg");
+}
+
+
+
 
 #fondo-galeria {
     background-color: black;
@@ -552,6 +603,10 @@ label {
         display: flex;
         align-items: center;
     }
+
+.fondo-tps{
+    height: auto;
+}
 
 
     footer {

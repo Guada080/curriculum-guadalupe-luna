@@ -5,6 +5,18 @@
     <title>Guada Luna Portoflio</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
 
 <body>
@@ -17,7 +29,7 @@
         </nav>
     </header>
     <main>
-        
+
         <section class="info-trabajos">
             <article>
                 <h4 class="titulo-color">Lookbook Indumentaria</h4>
@@ -29,30 +41,94 @@
         </section>
         <section id="miniaturas">
             <div class="thumbnail">
-                <img src="img/lookbook-1.jpg" class="cambio-scale"alt="imagen lookbook" width="280" height="180" />
-                <img src="img/lookbook-2.jpg"  class="cambio-scale"alt=" imagen lookbook abierto" width="280" height="180" />
+                <a href="#foto-5"><img src="img/editorial-miniatura-1.png" class="cambio-scale"
+                        alt="imagen de lookbook de indumentaria abierto" width="280" height="180"
+                        onClick="mostrarGaleria()"></a>
+
+                <a href="#foto-6"><img src="img/editorial-miniatura-2.png" class="cambio-scale"
+                        alt="imagen de lookbook de indumentaria abierto" width="280" height="180"
+                        onClick="mostrarGaleria()"></a>
             </div>
+
             <div class="thumbnail">
-                <img src="img/lookbook-3.jpg" class="cambio-scale" alt="imagen lookbook abierto" width="280" height="180" />
-                <img src="img/lookbook-4.jpg" class="cambio-scale" alt="imagen lookbook abierto" width="280" height="180" />
+                <a href="#foto-7"><img src="img/editorial-miniatura-3.png" class="cambio-scale"
+                        alt="mockup del reverso de las tres latas" alt="imagen de lookbook de indumentaria abierto"
+                        width="280" height="180" onClick="mostrarGaleria()"></a>
+                <a href="#foto-8"><img src="img/editorial-miniatura-4.png" class="cambio-scale"
+                        alt="imagen de lookbook de indumentaria abierto" width="280" height="180"
+                        onClick="mostrarGaleria()" /></a>
             </div>
         </section>
 
-        
-        <section class="CRIATURA">
-            <article class="info-trabajos">
-                <h4 class="titulo-color">CRIATURA</h4>
-                <p>La marca nace como una marca de ropa alternativa que busca salir de lo convencional, con una
-                    identidad visual marcada y una estética que mezcla lo urbano, lo oscuro y lo experimental. Cada
-                    prenda forma parte de una propuesta que apuesta por la expresión personal y una manera diferente de
-                    entender la moda.</p>
+        <section id="galeria">
+            <ul id="galeria-oculta">
+                <li class="fraccion-galeria" id="foto-5">
+                    <a href="#" class="primer-ultima-flecha"> <img src="img/atras.png" width="50" height="50"
+                            alt="atras"></a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-6">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-6">
+                    <a href="#foto-5">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-7">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-7">
+                    <a href="#foto-6">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-8">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+
+                <li class="fraccion-galeria" id="foto-8">
+                    <a href="#foto-7">
+                        <img src="img/atras.png" width="50" height="50" alt="atras">
+                    </a>
+                    <img class="cerrar" src="img/cerrar.png" alt="cerrar" width="50" height="50"
+                        onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha">
+                        <img src="img/siguiente.png" width="50" height="50" alt="siguiente">
+                    </a>
+                </li>
+            </ul>
+
+            <div id="fondo-galeria"></div>
+        </section>
+
+
+        <section class="criatura">
+            <article id="info-lookbook">
+                <div>
+                    <h4 class="titulo-color">Criatura</h4>
+                    <p>La marca nace como una marca de ropa alternativa que busca salir de lo convencional, con una
+                        identidad visual marcada y una estética que mezcla lo urbano, lo oscuro y lo experimental. Cada
+                        prenda forma parte de una propuesta que apuesta por la expresión personal y una manera diferente
+                        de
+                        entender la moda.</p>
+                </div>
+                <div>
+                    <img src="img/mockup-criatura.png" alt="mockup de lookbook en mano" width="400" height="300">
+                </div>
             </article>
-            <div>
-                <!--aca viene el video-->
-                <video src="video/Luna_Guadalupe_D3UNLa_Reel.mp4" controls height="500px">
-                    <source src="video/Luna_Guadalupe_D3UNLa_Reel.ogv" type="video/ogv">
-                    <source src="video/Luna_Guadalupe_D3UNLa_Reel.webm" type="video/webm">
-                    </video>
+            <div id="multimedia">
+                <video src="video/criatura-reel.mp4" poster="img/portada-video.png" controls  width="280" height="500">
+                    <source src="video/criatura-reel.ogv" type="video/ogv">
+                    <source src="video/criatura-reel.webm" type="video/webm">
+                </video>
             </div>
         </section>
     </main>
