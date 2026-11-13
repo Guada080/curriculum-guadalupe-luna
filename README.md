@@ -1,7 +1,12 @@
-# TP1 Curriculum 
+# TP4 Portfolio
 
-Este trabajo es desarrollado en archivo html5 y css. La estructura del html consta de head, main, y footer. Dentro del main se utilizan etiquetas como article, aside, listados y titulos y subtitulos desde h1 hasta h5 con el fin de presentar mi curriculum como estudiante de diseño, un poco sobre mi y las herramientas que se utilizar.
+Este trabajo consta de la realizacion de un portfolio web, tomando de base la informacion del primer trabajo de la cursada, el curriculum personal, y desarrolarlo de manera mas compleja y completa. 
+La pagina esta conformada por tres archivos html vinculados entre si, siendo una primera pantalla de Home, y luego una pantalla para los trabajos de packaging y otra para lo editorial. Tambien cuenta con un formulario de contacto, con campos obligatorios y estilos aplicados.
+El trabajo incluye galerias de fotos interactivas, y tambien un video
+Se utilizaron nuevas etiquetas de estilos, como position, transition, hovers,etc.
+La pagina cuenta con diseño responsive mobile de 600px.
 
-El archivo css da formato con flexbox, seccionando la página principalmente por una columna con breve informacion personal y a un lado informacion tecnica sobre estudios y saberes de programas. Además de proporcionar colores y tipografías al diseño de la web.
 
-La pantalla en la que fue trabajado es de 1920 x 1080 por el editor de codigo Visual Code.
+Este trabajo fue realizado en una pantalla 1920x1080, con el editor de codigo Visual Code.
+
+link a figma: https://www.figma.com/design/TIKK8NLYyFlWNu25u0z1i3/Portfolio?node-id=1-2&t=mheYgWvY1zT2YuZp-1
